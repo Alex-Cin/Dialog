@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CheckBox">
+        <!--外边框的 宽度-->
+        <attr name="cb_outBorderWidth" format="dimension"/>
+        <!--外边框的 颜色-->
+        <attr name="cb_outBorderColor" format="color"/>
+        <!--内置矩形框-->
+        <attr name="cb_innerNormalColor" format="color"/>
+        <!--内置矩形框-->
+        <attr name="cb_innerCheckedColor" format="color"/>
+        <!--外边框，圆角化半径-->
+        <attr name="cb_outBorderRadius" format="dimension"/>
+        <!--对勾的颜色-->
+        <attr name="cb_checkMarkColor" format="color"/>
+        <!--对勾的宽度-->
+        <attr name="cb_checkMarkWidth" format="dimension"/>
+        <!--被选中-->
+        <attr name="cb_isChecked" format="boolean"/>
+        <!--使用过渡动画-->
+        <attr name="cb_canAnim" format="boolean"/>
+        <!--展示 对勾 需要的时间长度-->
+        <attr name="cb_checkMarkerDuration" format="integer"/>
+    </declare-styleable>
+</resources>

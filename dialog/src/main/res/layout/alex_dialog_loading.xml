@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/alex_dialog_layer_list_shadow_rectangle"
+        android:padding="12dp">
+
+        <org.alex.sweeploadingview.SweepLoadingView
+            xmlns:SweepLoadingView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/slv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            SweepLoadingView:slv_circleColor="@color/alex_title_color"
+            SweepLoadingView:slv_circleWidth="4dp"
+            SweepLoadingView:slv_duration="800"
+            SweepLoadingView:slv_gapAngle="30"
+            SweepLoadingView:slv_strokeCap="round"/>
+    </RelativeLayout>
+
+</RelativeLayout>

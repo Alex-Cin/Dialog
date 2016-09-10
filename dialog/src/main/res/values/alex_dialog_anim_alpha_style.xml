@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="alex_dialog_anim_alpha" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/alex_dialog_anim_fade_in</item>
+        <item name="@android:windowExitAnimation">@anim/alex_dialog_anim_fade_out</item>
+    </style>
+
+</resources>

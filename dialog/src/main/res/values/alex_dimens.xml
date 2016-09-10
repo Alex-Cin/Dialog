@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--顶部标题栏的 颜色-->
+    <dimen name="alex_title_height">48dp</dimen>
+    <!--顶部标题栏的 标题字体大小-->
+    <dimen name="alex_title_text_size">20sp</dimen>
+</resources>

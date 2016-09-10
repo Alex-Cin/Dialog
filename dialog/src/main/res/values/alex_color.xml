@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alex_item_layout">#FFFFFF</color>
+    <color name="alex_item_layout_press">#F7F7F7</color>
+    <color name="alex_item_layout_ripple">#E1E1E1</color>
+    <!--主布局的颜色，背景的主色调-->
+    <color name="alex_background_color">#EEEEEE</color>
+    <!-- 标题颜色 -->
+    <color name="alex_title_color">#FF5722</color>
+</resources>

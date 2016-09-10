@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.alex.sweeploadingview.SweepLoadingView xmlns:SweepLoadingView="http://schemas.android.com/apk/res-auto"
+                                                android:id="@+id/slv"
+                                                android:layout_width="56dp"
+                                                android:layout_height="56dp"
+                                                android:layout_centerInParent="true"
+                                                SweepLoadingView:slv_circleColor="#FF5722"
+                                                SweepLoadingView:slv_circleWidth="4dp"
+                                                SweepLoadingView:slv_duration="800"
+                                                SweepLoadingView:slv_gapAngle="30"
+                                                SweepLoadingView:slv_strokeCap="round" />
+
+
+</RelativeLayout>

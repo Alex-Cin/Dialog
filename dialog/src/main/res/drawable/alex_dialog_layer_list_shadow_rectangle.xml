@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/alexDialogShadowColor_1" />
+            <corners android:radius="@dimen/alexDialogRadius" />
+            <padding
+                android:bottom="@dimen/alexDialogPadding"
+                android:left="@dimen/alexDialogPadding"
+                android:right="@dimen/alexDialogPadding"
+                android:top="@dimen/alexDialogPadding" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/alexDialogShadowColor_2" />
+            <corners android:radius="@dimen/alexDialogRadius" />
+            <padding
+                android:bottom="@dimen/alexDialogPadding"
+                android:left="@dimen/alexDialogPadding"
+                android:right="@dimen/alexDialogPadding"
+                android:top="@dimen/alexDialogPadding" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/alexDialogShadowColor_3" />
+            <corners android:radius="@dimen/alexDialogRadius" />
+            <padding
+                android:bottom="@dimen/alexDialogPadding"
+                android:left="@dimen/alexDialogPadding"
+                android:right="@dimen/alexDialogPadding"
+                android:top="@dimen/alexDialogPadding" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/alexDialogShadowColor_4" />
+            <corners android:radius="@dimen/alexDialogRadius" />
+            <padding
+                android:bottom="@dimen/alexDialogPadding"
+                android:left="@dimen/alexDialogPadding"
+                android:right="@dimen/alexDialogPadding"
+                android:top="@dimen/alexDialogPadding" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/alexDialogShadowColor_5" />
+            <corners android:radius="@dimen/alexDialogRadius" />
+            <padding
+                android:bottom="@dimen/alexDialogPadding"
+                android:left="@dimen/alexDialogPadding"
+                android:right="@dimen/alexDialogPadding"
+                android:top="@dimen/alexDialogPadding" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/alexDialogShadowColor_6" />
+            <corners android:radius="@dimen/alexDialogRadius" />
+            <padding
+                android:bottom="@dimen/alexDialogPadding"
+                android:left="@dimen/alexDialogPadding"
+                android:right="@dimen/alexDialogPadding"
+                android:top="@dimen/alexDialogPadding" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/alexDialogShadowColor_7" />
+            <corners android:radius="@dimen/alexDialogRadius" />
+            <padding
+                android:bottom="@dimen/alexDialogPadding"
+                android:left="@dimen/alexDialogPadding"
+                android:right="@dimen/alexDialogPadding"
+                android:top="@dimen/alexDialogPadding" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/alexDialogShadowColor_8" />
+            <corners android:radius="@dimen/alexDialogRadius" />
+            <padding
+                android:bottom="@dimen/alexDialogPadding"
+                android:left="@dimen/alexDialogPadding"
+                android:right="@dimen/alexDialogPadding"
+                android:top="@dimen/alexDialogPadding" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/alexDialogBodyColor" />
+            <corners android:radius="@dimen/alexDialogRadius" />
+            <padding
+                android:bottom="@dimen/alexDialogPadding"
+                android:left="@dimen/alexDialogPadding"
+                android:right="@dimen/alexDialogPadding"
+                android:top="@dimen/alexDialogPadding" />
+        </shape>
+    </item>
+</layer-list>
