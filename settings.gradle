@@ -1,1 +1,1 @@
-include ':app', ':dialog'
+include ':app', ':dialog', ':sweeploadingview'

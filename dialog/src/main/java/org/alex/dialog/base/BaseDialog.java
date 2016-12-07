@@ -22,6 +22,7 @@ import org.alex.dialog.annotation.AnimType;
 import org.alex.dialog.annotation.ClickPosition;
 import org.alex.dialog.callback.OnDialogClickListener;
 import org.alex.dialog.callback.SimpleOnKeyListener;
+import org.alex.dialog.helper.OnClickHelper;
 import org.alex.dialog.util.StatusBarUtils;
 
 /**
@@ -92,7 +93,8 @@ public abstract class BaseDialog<D extends BaseDialog> extends Dialog implements
         tag = getClass().getSimpleName();
         setContentView(rootView);
         setCanceledOnTouchOutside(false);
-        onCreateDialog();
+        OnClickHelper.getInstance().onBindClickListener(rootView, this);
+        onCreateData();
     }
 
     /**
@@ -104,10 +106,10 @@ public abstract class BaseDialog<D extends BaseDialog> extends Dialog implements
     /**
      * 在 这里 进行 findView  设置点击事件
      */
-    public abstract void onCreateDialog();
+    public abstract void onCreateData();
 
     public D tag(@NonNull Object tag) {
-        if(tag!=null){
+        if (tag != null) {
             this.tag = tag;
         }
         return (D) this;
@@ -231,7 +233,14 @@ public abstract class BaseDialog<D extends BaseDialog> extends Dialog implements
      * 处理按钮点击事件 并绑定 onDialogClickListener
      */
     @Override
-    public abstract void onClick(View v);
+    public void onClick(View v) {
+        onClick(v, v.getId());
+    }
+
+    /**
+     * 处理按钮点击事件 并绑定 onDialogClickListener
+     */
+    public abstract void onClick(View v, int id);
 
     public void onDialogClickListener(@ClickPosition String clickPosition) {
         if (onDialogClickListener != null) {
@@ -311,19 +320,16 @@ public abstract class BaseDialog<D extends BaseDialog> extends Dialog implements
     private void measureView(View view) {
         ViewGroup.LayoutParams p = view.getLayoutParams();
         if (p == null) {
-            p = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                    ViewGroup.LayoutParams.WRAP_CONTENT);
+            p = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         }
 
         int childWidthSpec = ViewGroup.getChildMeasureSpec(0, 0 + 0, p.width);
         int lpHeight = p.height;
         int childHeightSpec;
         if (lpHeight > 0) {
-            childHeightSpec = View.MeasureSpec.makeMeasureSpec(lpHeight,
-                    View.MeasureSpec.EXACTLY);
+            childHeightSpec = View.MeasureSpec.makeMeasureSpec(lpHeight, View.MeasureSpec.EXACTLY);
         } else {
-            childHeightSpec = View.MeasureSpec.makeMeasureSpec(0,
-                    View.MeasureSpec.UNSPECIFIED);
+            childHeightSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
         }
         view.measure(childWidthSpec, childHeightSpec);
     }

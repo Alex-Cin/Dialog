@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="oneButtonDialogBodyColor">#EEFFFFFF</color>
+    <color name="oneButtonDialogShadowColor_1">#0a8c8c8c</color>
+    <color name="oneButtonDialogShadowColor_2">#0f898989</color>
+    <color name="oneButtonDialogShadowColor_3">#14898989</color>
+    <color name="oneButtonDialogShadowColor_4">#19898989</color>
+    <color name="oneButtonDialogShadowColor_5">#1e898989</color>
+    <color name="oneButtonDialogShadowColor_6">#23898989</color>
+    <color name="oneButtonDialogShadowColor_7">#28898989</color>
+    <color name="oneButtonDialogShadowColor_8">#2d898989</color>
+    <dimen name="oneButtonDialogPaddingLeft">1px</dimen>
+    <dimen name="oneButtonDialogPaddingTop">1px</dimen>
+    <dimen name="oneButtonDialogPaddingRight">1px</dimen>
+    <dimen name="oneButtonDialogPaddingBottom">1px</dimen>
+    <dimen name="oneButtonDialogRadius">8dp</dimen>
+</resources>

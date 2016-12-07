@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0-rc1'
+        classpath 'com.android.tools.build:gradle:2.2.3'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -17,6 +17,18 @@ allprojects {
         jcenter()
     }
 }
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.0"
+    minSdkVersion = 16
+    targetSdkVersion = 21
+    libs = [
+            appcompat_v7: 'com.android.support:appcompat-v7:25.0.1',
+            design      : 'com.android.support:design:25.0.1',
+            recyclerview: 'com.android.support:recyclerview-v7:25.0.1',
+    ]
+}
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir

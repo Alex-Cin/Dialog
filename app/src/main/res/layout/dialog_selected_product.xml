@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="温馨提示"
+            android:textColor="#666666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+
+            android:lineSpacingMultiplier="1.5"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="您的智商余额不足，请及时充值；您的智商余额不足，请及时充值；您的智商余额不足，请及时充值；您的智商余额不足，请及时充值；您的智商余额不足，请及时充值；您的智商余额不足，请及时充值；您的智商余额不足，请及时充值；您的智商余额不足，请及时充值；您的智商余额不足，请及时充值；您的智商余额不足，请及时充值；您的智商余额不足，请及时充值；您的智商余额不足，请及时充值"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/selector_dialog_one_button_submit"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="确定"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.alex">
+    package="com.alex.dialogdemo">
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 申请联网权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 申请读通讯录权限-->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!-- 申请写通讯录权限-->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <!-- 申请拨号权限-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 申请写通话记录权限-->
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <!-- 申请读通话记录权限-->
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <!-- 申请发送短信权限-->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!-- 申请写短信记录权限-->
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <!-- 申请读短信记录权限-->
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <!-- 申请监控电量变化 -->
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <!-- 申请开机启动权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!-- 打开Camera的权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
 
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.autofocus"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <!-- 开启闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <!-- 开启闪光灯权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/alex_theme_no_title">
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
