@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SweepLoadingView">
+        <!-- 加载环的颜色 -->
+        <attr name="slv_circleColor" format="color"/>
+        <!-- 加载环的宽度 -->
+        <attr name="slv_circleWidth" format="dimension"/>
+        <!-- 较大弧度环 转一圈 需要的时间 -->
+        <attr name="slv_duration" format="integer"/>
+        <!-- 终点 和 起点的间隔 角度 -->
+        <attr name="slv_gapAngle" format="float"/>
+        <!--右按钮 的 功能 枚举-->
+        <attr name="slv_strokeCap" format="enum">
+            <!--两端 是 半圆形-->
+            <enum name="round" value="0"/>
+            <!--两端 是 矩形-->
+            <enum name="square" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>
